@@ -1,0 +1,50 @@
+[
+  {
+    "to": "images/favicon.png",
+    "from": "favicon.ico"
+  },
+  {
+    "to": "style/*",
+    "from": "style/*"
+  },
+  {
+    "to": "lib/*",
+    "from": "lib/*"
+  },
+  {
+    "to": "script/*",
+    "from": "script/*"
+  },
+  {
+    "to": "fonts/*",
+    "from": "fonts/*"
+  },
+  {
+    "to": "images/*",
+    "from": "images/*"
+  },
+  {
+    "to": "vendor/*",
+    "from": "vendor/*"
+  },
+  {
+    "to": "pages/index.html",
+    "from": ""
+  },
+  {
+    "to": "../../../:db/_design/geojson/_spatial/points",
+    "from": ":db/geojson"
+  },
+  {
+    "to": "../../../:db/:id",
+    "from": ":db/:id"
+  },
+  {
+    "to": "../../",
+    "from": "/geopaste"
+  },
+  {
+    "to": "../../*",
+    "from": "geopaste/*"
+  }
+]

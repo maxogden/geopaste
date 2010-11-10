@@ -1,0 +1,52 @@
+h1. GeoPaste - Edit and Share GeoJSON Features
+
+WORK IN PROGRESS
+
+This intends to allow the sharing of GeoJSON features in a way inspired by @gist.github.com@, but also store all GeoJSON in a replicable GeoCouch instance.
+
+
+h3. Installation/Getting it Running locally
+
+Super easy. First, get yourself a Couch: 
+
+"http://www.couchone.com/get":http://www.couchone.com/get
+
+Next, clone or fork action:
+
+@git clone git://github.com/maxogden/geopaste.git@
+    
+Then edit your DB URL in your .couchapprc
+    
+@cd geopaste@
+@open .couchapprc@
+    
+You should make the @"default"@ URL map to your couch including your username and password. By default, CouchDB is in admin party mode (meaning you dont need a user/pass and every one is an admin) so you can just get rid of the 'admin:admin' in the default URL or add an admin/admin user to your CouchDB instance:
+
+<pre><code>{ "env": { "default": { "db": "http://admin:admin@127.0.0.1:5984/my_couchapp_db" } } }</code></pre>
+
+Then, its easy-peasy:
+
+@couchapp push@
+    
+(The MIT License)
+
+Copyright (c) 2010 Justin Palmer and Max Ogden
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

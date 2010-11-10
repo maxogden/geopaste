@@ -4,7 +4,7 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #fff url(/img/bg.png);
+  background: #fff url(/images/bg.png);
   font-size: 12px;
 }
 
@@ -196,7 +196,7 @@ menu.controls li {
 menu.controls li a {
   display: block;
   text-indent: -99999px;
-  background: url(/img/icons.png) 5px 5px no-repeat;
+  background: url(/images/icons.png) 5px 5px no-repeat;
   width: 18px;
   height: 18px;
   padding: 5px;
